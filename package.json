@@ -4,6 +4,8 @@
   "description": "I den kommende skoleperiode skal vi se nærmere på et JavaScript frontend **framework**. Vi har besluttet at **ReactJS** er det framework I i den kommende skoleperiode skal introduceres til. Vi har valgt ReactJS fordi det er det absolut mest brugte framework blandt branchens bureauer.",
   "main": "src/index.js",
   "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/rts-cmk-wuhf02/skoleperiode-framework-isabroch/issues"
   },
-  "homepage": "https://github.com/rts-cmk-wuhf02/skoleperiode-framework-isabroch#readme"
+  "homepage": "https://github.com/rts-cmk-wuhf02/skoleperiode-framework-isabroch#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5"
+  }
 }
